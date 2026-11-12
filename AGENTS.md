@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Menu data lives in `src/lib/menu.ts` and cart math in `src/lib/cart.ts` (pure, tested in `cart.test.ts`); UI reads from them so prices change in one place.
+- Cart state is client-side (React context + localStorage); there is no backend yet.
