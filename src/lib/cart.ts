@@ -29,7 +29,7 @@ export function addToCart(items: CartItem[], product: Product, option?: ProductO
       key,
       productId: product.id,
       name: product.name,
-      option: option?.label,
+      option: option && product.optionLabel ? `${product.optionLabel}: ${option.label}` : option?.label,
       unitPrice: priceFor(product, option),
       quantity: 1,
     },
