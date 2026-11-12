@@ -31,7 +31,7 @@ function Index() {
     <CartProvider>
       <div className="min-h-screen">
         <header className="sticky top-0 z-40 border-b border-primary/10 bg-background/90 backdrop-blur">
-          <div className="checker-strip h-3 bg-[length:0.75rem_0.75rem]" />
+          <div className="checker-strip checker-strip-sm" />
           <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
             <a href="#top" className="flex items-center gap-2">
               <CatMugLogo className="size-10" />

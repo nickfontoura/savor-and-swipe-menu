@@ -180,3 +180,8 @@
 @utility animate-rise-in {
   animation: rise-in 0.6s ease-out both;
 }
+
+@utility checker-strip-sm {
+  height: 0.75rem;
+  background-size: 0.75rem 0.75rem;
+}
