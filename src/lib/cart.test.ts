@@ -31,6 +31,6 @@ describe("cart", () => {
 
   it("removing the last unit takes the item out of the cart", () => {
     const items = addToCart([], find("coxinha"));
-    expect(changeQuantity(items, items[0].key, -1)).toEqual([]);
+    expect(changeQuantity(items, items[0]!.key, -1)).toEqual([]);
   });
 });
