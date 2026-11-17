@@ -22,11 +22,22 @@ export function ProductCard({ product, index }: { product: Product; index: numbe
         </span>
       )}
 
-      {/* Espaço reservado para a foto do produto */}
-      <div className="photo-slot m-3 mb-0 flex aspect-square items-center justify-center rounded-xl border-2 border-dashed border-border">
-        <ImageIcon className="size-8 text-border" aria-hidden="true" />
-        <span className="sr-only">Foto de {product.name} em breve</span>
-      </div>
+      {/* Foto do produto (ou espaço reservado enquanto não há foto) */}
+      {product.image ? (
+        <div className="m-3 mb-0 overflow-hidden rounded-xl">
+          <img
+            src={product.image}
+            alt={product.name}
+            loading="lazy"
+            className="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      ) : (
+        <div className="photo-slot m-3 mb-0 flex aspect-square items-center justify-center rounded-xl border-2 border-dashed border-border">
+          <ImageIcon className="size-8 text-border" aria-hidden="true" />
+          <span className="sr-only">Foto de {product.name} em breve</span>
+        </div>
+      )}
 
       <div className="flex flex-1 flex-col gap-2 p-4">
         <h3 className="text-lg font-bold leading-tight text-primary">{product.name}</h3>
