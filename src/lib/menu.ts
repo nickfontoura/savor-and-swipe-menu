@@ -8,6 +8,11 @@ import croissantSalgadoImg from "@/assets/products/croissant-salgado.png.asset.j
 import creppeFrancesImg from "@/assets/products/creppe-frances.png.asset.json";
 import fatiaBoloSimplesImg from "@/assets/products/fatia-bolo-simples.png.asset.json";
 import fatiaBoloRecheadoImg from "@/assets/products/fatia-bolo-recheado.png.asset.json";
+import mistoQuenteImg from "@/assets/products/misto-quente.png.asset.json";
+import brownieImg from "@/assets/products/brownie.png.asset.json";
+import coxinhaImg from "@/assets/products/coxinha.png.asset.json";
+import bolinhaDeQueijoImg from "@/assets/products/bolinha-de-queijo.png.asset.json";
+import paoDeQueijoImg from "@/assets/products/pao-de-queijo.png.asset.json";
 
 export type ProductOption = { label: string; price?: number };
 
@@ -118,7 +123,7 @@ export const menu: MenuSection[] = [
         image: creppeFrancesImg.url,
         badge: "Novo no menu",
         description:
-          "Panqueca de massa muito fina e delicada, com recheios doces ou salgados.",
+          "Panqueca de massa muito fina e delicada, com recheios doces.",
       },
       {
         id: "fatia-bolo-simples",
@@ -139,12 +144,14 @@ export const menu: MenuSection[] = [
         id: "misto-quente",
         name: "Misto Quente",
         price: 9,
+        image: mistoQuenteImg.url,
         description: "Sanduíche clássico com pão, queijo e presunto, tostado até derreter.",
       },
       {
         id: "brownie",
         name: "Brownie",
         price: 14.9,
+        image: brownieImg.url,
         badge: "Mais vendido",
         description: "Bolo de chocolate de massa densa, interior úmido e casquinha crocante.",
       },
@@ -152,18 +159,21 @@ export const menu: MenuSection[] = [
         id: "coxinha",
         name: "Coxinha",
         price: 11.9,
+        image: coxinhaImg.url,
         description: "Salgado brasileiro com massa de farinha de trigo e recheio de frango.",
       },
       {
         id: "bolinha-de-queijo",
         name: "Bolinha de Queijo",
         price: 14.9,
+        image: bolinhaDeQueijoImg.url,
         description: "Salgadinho frito e empanado, recheado com queijo muçarela.",
       },
       {
         id: "pao-de-queijo",
         name: "Pão de Queijo",
         price: 3.5,
+        image: paoDeQueijoImg.url,
         description: "Pãozinho de polvilho e queijo, macio por dentro e crocante por fora.",
       },
     ],
