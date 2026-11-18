@@ -1,19 +1,3 @@
-import chaGeladoImg from "@/assets/products/cha-gelado.png.asset.json";
-import cafeGeladoImg from "@/assets/products/cafe-gelado.png.asset.json";
-import cafePersonalizadoImg from "@/assets/products/cafe-personalizado.png.asset.json";
-import chocolateQuenteImg from "@/assets/products/chocolate-quente.png.asset.json";
-import rocamboleImg from "@/assets/products/rocambole.png.asset.json";
-import croissantDoceImg from "@/assets/products/croissant-doce.png.asset.json";
-import croissantSalgadoImg from "@/assets/products/croissant-salgado.png.asset.json";
-import creppeFrancesImg from "@/assets/products/creppe-frances.png.asset.json";
-import fatiaBoloSimplesImg from "@/assets/products/fatia-bolo-simples.png.asset.json";
-import fatiaBoloRecheadoImg from "@/assets/products/fatia-bolo-recheado.png.asset.json";
-import mistoQuenteImg from "@/assets/products/misto-quente.png.asset.json";
-import brownieImg from "@/assets/products/brownie.png.asset.json";
-import coxinhaImg from "@/assets/products/coxinha.png.asset.json";
-import bolinhaDeQueijoImg from "@/assets/products/bolinha-de-queijo.png.asset.json";
-import paoDeQueijoImg from "@/assets/products/pao-de-queijo.png.asset.json";
-
 export type ProductOption = { label: string; price?: number };
 
 export type Product = {
@@ -43,7 +27,7 @@ export const menu: MenuSection[] = [
         id: "cha-gelado",
         name: "Chá Gelado",
         price: 15.5,
-        image: chaGeladoImg.url,
+        image: "/products/cha-gelado.png",
         description:
           "Bebida refrescante feita com a infusão de ervas ou folhas de chá, servida com gelo.",
       },
@@ -51,14 +35,14 @@ export const menu: MenuSection[] = [
         id: "cafe-gelado",
         name: "Café Gelado",
         price: 18.5,
-        image: cafeGeladoImg.url,
+        image: "/products/cafe-gelado.png",
         description: "Bebida à base de café, misturada com alimento congelado.",
       },
       {
         id: "cafe-personalizado",
         name: "Café Personalizado",
         price: 20.9,
-        image: cafePersonalizadoImg.url,
+        image: "/products/cafe-personalizado.png",
         badge: "Mais vendido",
         description:
           "Para os amantes de gatos: escolha o formato ou desenho de preferência para sua bebida.",
@@ -67,7 +51,7 @@ export const menu: MenuSection[] = [
         id: "chocolate-quente",
         name: "Chocolate Quente",
         price: 12.9,
-        image: chocolateQuenteImg.url,
+        image: "/products/chocolate-quente.png",
         description: "Bebida quente e doce, feita com chocolate derretido ou cacau em pó.",
       },
     ],
@@ -80,7 +64,7 @@ export const menu: MenuSection[] = [
         id: "rocambole",
         name: "Rocambole",
         price: 15,
-        image: rocamboleImg.url,
+        image: "/products/rocambole.png",
         description: "Massa de bolo com cobertura, enrolada sobre si mesma.",
         optionLabel: "Tamanho",
         options: [
@@ -93,7 +77,7 @@ export const menu: MenuSection[] = [
         id: "croissant-doce",
         name: "Croissant Doce",
         price: 22.9,
-        image: croissantDoceImg.url,
+        image: "/products/croissant-doce.png",
         badge: "Mais vendido",
         description: "Pão leve e amanteigado de massa folhada em formato de meia-lua.",
         optionLabel: "Sabor",
@@ -107,7 +91,7 @@ export const menu: MenuSection[] = [
         id: "croissant-salgado",
         name: "Croissant Salgado",
         price: 14,
-        image: croissantSalgadoImg.url,
+        image: "/products/croissant-salgado.png",
         description: "Massa leve e amanteigada, recheada com clássicos.",
         optionLabel: "Sabor",
         options: [
@@ -120,7 +104,7 @@ export const menu: MenuSection[] = [
         id: "creppe-frances",
         name: "Creppe Francês",
         price: 29,
-        image: creppeFrancesImg.url,
+        image: "/products/creppe-frances.png",
         badge: "Novo no menu",
         description:
           "Panqueca de massa muito fina e delicada, com recheios doces.",
@@ -129,14 +113,14 @@ export const menu: MenuSection[] = [
         id: "fatia-bolo-simples",
         name: "Fatia de Bolo Simples",
         price: 9,
-        image: fatiaBoloSimplesImg.url,
+        image: "/products/fatia-bolo-simples.png",
         description: "Fatia de bolo individual, em média entre 100g e 150g.",
       },
       {
         id: "fatia-bolo-recheado",
         name: "Fatia de Bolo Recheado",
         price: 20,
-        image: fatiaBoloRecheadoImg.url,
+        image: "/products/fatia-bolo-recheado.png",
         badge: "Novo no menu",
         description: "Fatia de bolo recheada no meio, em média entre 200g e 350g.",
       },
@@ -144,14 +128,14 @@ export const menu: MenuSection[] = [
         id: "misto-quente",
         name: "Misto Quente",
         price: 9,
-        image: mistoQuenteImg.url,
+        image: "/products/misto-quente.png",
         description: "Sanduíche clássico com pão, queijo e presunto, tostado até derreter.",
       },
       {
         id: "brownie",
         name: "Brownie",
         price: 14.9,
-        image: brownieImg.url,
+        image: "/products/brownie.png",
         badge: "Mais vendido",
         description: "Bolo de chocolate de massa densa, interior úmido e casquinha crocante.",
       },
@@ -159,21 +143,21 @@ export const menu: MenuSection[] = [
         id: "coxinha",
         name: "Coxinha",
         price: 11.9,
-        image: coxinhaImg.url,
+        image: "/products/coxinha.png",
         description: "Salgado brasileiro com massa de farinha de trigo e recheio de frango.",
       },
       {
         id: "bolinha-de-queijo",
         name: "Bolinha de Queijo",
         price: 14.9,
-        image: bolinhaDeQueijoImg.url,
+        image: "/products/bolinha-de-queijo.png",
         description: "Salgadinho frito e empanado, recheado com queijo muçarela.",
       },
       {
         id: "pao-de-queijo",
         name: "Pão de Queijo",
         price: 3.5,
-        image: paoDeQueijoImg.url,
+        image: "/products/pao-de-queijo.png",
         description: "Pãozinho de polvilho e queijo, macio por dentro e crocante por fora.",
       },
     ],

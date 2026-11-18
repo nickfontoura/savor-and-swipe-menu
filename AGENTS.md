@@ -32,3 +32,4 @@ use the editor.
 ## Project rules
 - Menu data lives in `src/lib/menu.ts` and cart math in `src/lib/cart.ts` (pure, tested in `cart.test.ts`); UI reads from them so prices change in one place.
 - Cart state is client-side (React context + localStorage); there is no backend yet.
+- Product photos and the logo are plain files in `public/` (`/products/<id>.png`, `/gato-caneca-logo.png`), not CDN `.asset.json` pointers, so the site works when hosted outside Lovable (e.g. Cloudflare Workers).
